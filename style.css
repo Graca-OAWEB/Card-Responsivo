@@ -1,0 +1,121 @@
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  outline:none;
+}
+
+body{ 
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: #F6F9FF;
+ 
+}
+main{
+  height: 80vh;
+  width: 80%;
+  display: flex;
+  justify-content:center;
+  align-content: center;
+  background-color: #F6F9FF;
+  padding: 2em;
+  gap: 3em;
+}
+.card-box{
+  width: 20em;
+  height: 25em;
+  background-color:#630323;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center; 
+  border-radius: 0.5em;
+  padding: 1em;
+  box-shadow: 5px 5px 10px 1px #c4a2ac;
+}
+.card-box:hover{
+  background-color: #fafbfd; 
+  color: #c4a2ac;
+  transform: scale(1.1);
+}
+.img-box, h2{
+  display: flex;
+  justify-content: center;
+  align-content: center; 
+  padding: 0.3em;
+}
+.img-box{
+  height: 2em;
+  width: 2em;
+  color: #8a6f7e ;
+  font-size: 4em;
+}
+.img-box:hover{
+  color:#630323;
+}
+h2{
+  font-size: 2em;
+  color: #7e304a;
+}
+
+p{
+  font-size: 1em;
+  height: 30em;
+  line-height: 1;
+  color: #8a6f7e;
+  
+}
+button{
+  width: 8em;
+  margin-top: 1.5em;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center; 
+  padding: 0.5em 0.2em;  
+  cursor: pointer;
+  color: #F6F9FF;
+  border: #7e304a solid 2px;  
+  border-radius: 2em;
+  background: linear-gradient(to right, #630323 65%, #DFCBFF);
+}
+button:hover{
+ transform: scale(1.1);
+  background:  #630323;
+}
+@media screen and (max-width: 820px) {
+  body{
+    height: 100%;
+  }
+  main {
+    margin-top: 20em;
+    margin-bottom: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 0.2em;
+  }
+
+  .card-box {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  button {
+      font-size: 100%;
+  }
+
+}
